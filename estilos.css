@@ -1,0 +1,67 @@
+:root {
+    --color-youtube: #c4302b;
+    --color-facebook: #3b5998;
+    --color-twiter: #00acee;
+    --color-instagram: #c13584;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.socialMedia {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.socialMedia ul {
+    font-size: 40px;
+    list-style: none;
+    text-align: center;
+}
+
+.socialMedia li:nth-child(1) {
+    background: var(--color-youtube);
+    border-radius: 5px 0 0 0;
+}
+
+.socialMedia li:nth-child(2) {
+    background: var(--color-facebook);
+}
+
+.socialMedia li:nth-child(3) {
+    background: var(--color-twiter);
+}
+
+.socialMedia li:nth-child(4) {
+    background: var(--color-instagram);
+    border-radius: 0 0 0 5px;
+}
+
+.socialMedia a {
+    color: white;
+    padding: 5px;
+}
+
+.socialMedia i {
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.socialMedia a:hover i {
+    transform: scale(1);
+    text-shadow: 3px 3px 5px rgba(43, 43, 43, 0.897);
+}
